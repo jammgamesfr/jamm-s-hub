@@ -1,0 +1,62 @@
+body {
+    background: url('xp-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Windows XP-style window */
+.xp-window {
+    width: 556px;
+    height: 350px;
+    border: 2px solid black;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title-bar {
+    background: blue;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.close-btn {
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Help Service Window (Hidden by Default) */
+.help-service {
+    width: 541px;
+    height: 541px;
+    position: fixed;
+    bottom: -600px;
+    left: 20px;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.help-service.open {
+    bottom: 20px;
+}
+
+/* Form */
+input, button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+}
+
+button {
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
