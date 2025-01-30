@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamm's Hub - XP Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- XP Window: Store -->
+    <div class="xp-window" id="store-window">
+        <div class="title-bar">
+            <span>Jamm's Hub Store</span>
+            <button class="close-btn" onclick="closeWindow('store-window')">X</button>
+        </div>
+        <div class="window-content">
+            <p>Welcome to Jamm’s Hub! Browse our merch and get support if needed.</p>
+            <button onclick="toggleHelpWindow()">Need Help?</button>
+        </div>
+    </div>
+
+    <!-- XP Window: Help Service -->
+    <div class="xp-window help-service" id="help-window">
+        <div class="title-bar">
+            <span>Email Help Service</span>
+            <button class="close-btn" onclick="closeWindow('help-window')">X</button>
+        </div>
+        <div class="window-content">
+            <p>Enter your details to request help:</p>
+            <form id="help-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="confirmation-message" style="display: none;">We will send you an email soon for the call. Please standby.</p>
+        </div>
+    </div>
+
+</body>
+</html>
